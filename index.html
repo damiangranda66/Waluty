@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-123757620-1');
-        </script>
-
         <title>Biznes świat - kursy, kalkulator walut i wynagrodzeń</title>
         <meta name="keywords" content="kurs, waluta, wynagrodzenie, kwota, netto, brutto"/>
         <meta name="description" content="Aplikacja do przeliczeń walut oraz wynagrodzeń"/>
@@ -17,42 +9,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
 
-    <body>
+    <body class="body">
 
 
         <header>
-            <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <!-- Navbar -->
+            <nav class="navbar bg-dark navbar-dark navbar-expand-md  fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="img/dolar.png" width="20" height="20" class="d-md-none mr-1 mb-1">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/dolar.png" width="20" height="20" class="d-md-none mr-1 mb-1">
                         Biznes Świat
                     </a>
-                    <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="ToggleNavigation">
+ <!-----------------------------------------------------------  Collapsible content ------------------------------------------->
+                    <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <div class="collapse navbar-collapse" id="mainMenu">
-                        <ul class="navbar-nav mr-auto">
-
-                                                                     <!-- Strona główna -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                    Kursy walut
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="collapse navbar-collapse " id="mainMenu" >
+                        <ul class="navbar-nav mr-auto " >
+ <!------------------------------------------------------------- Nav  Strona główna ------------------------------------------------------------>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStart" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start</a>
+                                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdownStart">
                                     <ul class="nav flex-column flex-md-row nav-fill">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">O nas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Cel</a>
+                                            <a class="nav-link" href="#">Nasze usługi</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Blog</a>
+                                            <a class="nav-link" href="#">Bezpieczeństwo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Events</a>
+                                            <a class="nav-link" href="#">Opinie klijentów</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Media o nas</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Dołącz do nas</a>
@@ -60,13 +57,10 @@
                                     </ul>
                                 </div>
                             </li>
-                                                                     <!-- Kursy walut  -->
-
+<!------------------------------------------------------------------ Nav Kursy walut  --------------------------------------------------------->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                    Kursy walut
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCourse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kursy walut</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownCourse">
                                     <ul class="nav flex-column flex-md-row nav-fill">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">O kantorze</a>
@@ -80,15 +74,107 @@
                                     </ul>
                                 </div>
                             </li>
-
-
+ <!------------------------------------------------------------------ Nav Kalkuklator walut  ------------------------------------------------>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCalculator" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kalkulator walut</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownCalculator">
+                                    <ul class="nav flex-column flex-md-row nav-fill">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Jak wymienić walutęw</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Kalkulator walut</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Kalkulator wynagrodzeń</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+<!-------------------------------------------------------------------- Nav kontakt -------------------------------------------------------------------->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kontakt </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownContact">
+                                    <ul class="nav flex-column flex-md-row nav-fill">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Zadzwoń</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Napisz</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Odwiedź</a>
+                                        </li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-user "></span> Sign Up</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+<!-------------------------------------------------------------------- Nav Logowanie -------------------------------------------------------------------->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user "></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
                         </ul>
                     </div>
                 </div>
-
-
             </nav>
+        </header>
 
+        <main>
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="about_bg"></div>
+                    <h1 class="text-center">O nas</h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p> Biznes Świat to największy polski kantor internetowy. Umożliwia bezpieczną, tanią i szybką wymianę walut z dowolnego miejsca.
+                                Jesteśmy jednym z liderów wymiany walut online. Od 3 lat dynamicznie rozwijamy się również na rynku europejskim.</p>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <p>  Znając potrzeby naszych klijenyów, stworzyliśmy praktyczną platformę pozwalającą na oszczędność czasu.
+                                 Dlatego opracowaliśmy zaawansowane technologicznie rozwiązania biznesowo-informatyczne. Od 2013 roku zaufało nam ponad 500 tys. klientów.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Najdłużej działający kantor internetowy w Polsce</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="reason_box">
+                                <div class="reason_box_title">10 lat</div>
+                                <div class="reason_box_subtitle">na rynku</div>
+                                <div class="reason_box_text">Jesteśmy najdłużej działającym kantorem internetowym w Polsce.</div>
+                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="reason_box">
+                                <div class="reason_box_title">525 tyś.</div>
+                                <div class="reason_box_subtitle">klijentów</div>
+                                <div class="reason_box_text">Nasi klijenci zawsze są zadowoleni z wymiany walut.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="reason_box">
+                                <div class="reason_box_title">810 mln zł</div>
+                                <div class="reason_box_subtitle">oszczędności</div>
+                                <div class="reason_box_text">Do 6% oszczędności na wymianie waluty, w porównaniu do kursów bankowych.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="target" class="target">
+                <div class="container">
+                    <h1 class="text-center">Nasze usługi</h1>
+                </div>
+            </section>
+        </main>
+
+
+
+
+            <!--
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <a class="navbar-brand" href="#">Mega Dropdown</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,7 +209,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
                                             <ul class="nav flex-column">
                                                 <li class="nav-item">
@@ -137,7 +223,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
                                             <a href="">
                                                 <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
@@ -145,10 +231,10 @@
                                             <p class="text-white">Short image call to action</p>
 
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                     </div>
                                 </div>
-                                <!--  /.container  -->
+                                <!--  /.container  --
 
 
                             </div>
@@ -176,7 +262,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
                                             <ul class="nav flex-column">
                                                 <li class="nav-item">
@@ -190,7 +276,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
                                             <a href="">
                                                 <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
@@ -198,10 +284,10 @@
                                             <p class="text-white">Short image call to action</p>
 
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                     </div>
                                 </div>
-                                <!--  /.container  -->
+                                <!--  /.container  --
 
 
                             </div>
@@ -229,7 +315,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
                                             <ul class="nav flex-column">
                                                 <li class="nav-item">
@@ -243,7 +329,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                         <div class="col-md-4">
 
                                             <a href="">
@@ -252,10 +338,10 @@
                                             <p class="text-white">Short image call to action</p>
 
                                         </div>
-                                        <!-- /.col-md-4  -->
+                                        <!-- /.col-md-4  --
                                     </div>
                                 </div>
-                                <!--  /.container  -->
+                                <!--  /.container  --
 
 
                             </div>
@@ -270,22 +356,18 @@
 
 
             </nav>
+            -->
 
 
-        </header>
-
-        <main>
-
-        </main>
-
-
-        <footer>
-
+        <footer id="copyrights">
+            Copyright &#169; Damian Granda
         </footer>
 
 
 
-        <script src="scratch.js"></script>
+        <script src="https://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+        <script type="text/javascript" src="scratch.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

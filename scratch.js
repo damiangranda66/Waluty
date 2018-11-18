@@ -1,26 +1,24 @@
-$(document).ready(function() {
-    // executes when HTML-Document is loaded and DOM is ready
 
-// breakpoint and up
-    $(window).resize(function(){
-        if ($(window).width() >= 580){
-
-            // when you hover a toggle show its dropdown menu
-            $(".navbar .dropdown-toggle").hover(function () {
-                $(this).parent().toggleClass("show");
-                $(this).parent().find(".dropdown-menu").toggleClass("show");
-            });
-
-            // hide the menu when the mouse leaves the dropdown
-            $( ".navbar .dropdown-menu" ).mouseleave(function() {
-                $(this).removeClass("show");
-            });
-
-            // do something here
+$( document ).ready( function () {
+    $( '.dropdown' ).on( 'click', function ( e ) {
+        var $el = $( this );
+        var $parent = $( this ).offsetParent( ".dropdown-menu" );
+        if ( !$( this ).next().hasClass( 'show' ) ) {
+            $( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
         }
-    });
+        var $subMenu = $( this ).next( ".dropdown-menu" );
+        $subMenu.toggleClass( 'show' );
 
+        $( this ).parent( "li" ).toggleClass( 'show' );
 
+        $( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function ( e ) {
+            $( '.dropdown-menu .show' ).removeClass( "show" );
+        } );
 
-// document ready
-});
+        if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
+            $el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
+        }
+
+        return false;
+    } );
+} );
