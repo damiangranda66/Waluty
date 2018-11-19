@@ -70,6 +70,7 @@ hr {
     background-color:#0060c8!important;
     border-radius: 0px;
     opacity: 0.9;
+    min-height: 80px;
 }
 
 li.active {
@@ -81,7 +82,7 @@ li a:hover:not(.active) {
 }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 
     /* remove the padding from the navbar so the dropdown hover state is not broken */
     .navbar {
@@ -89,9 +90,14 @@ li a:hover:not(.active) {
     }
 
     /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-     .nav-item {
-        padding:.5rem .5rem;
-        margin:.25rem;
+    .nav-item {
+        padding:8px 4px;
+        margin:2px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-link {
+        margin-left: 16px;
     }
 }
 
