@@ -28,73 +28,44 @@
 }
 
 section {
-    padding: 40px 10% 40px 10%;
-    margin: 0;
-    background-color: rgb(255, 41, 63);
+    background-color: rgb(255, 0, 10);         -------------
 }
 
 h1 {
-
     letter-spacing: 3px;
     font-weight: 600;
 }
 
 h1::first-letter {
     color: var(--main-color);
-    font-weight: 800;
+    font-weight: 750;
 }
 
-h3 {
-    font-size: 2.0em;
-    margin: 30px 0px 30px 0px;
-    padding: 0;
+h2 {
     letter-spacing: 3px;
-    font-weight: 400;
-    text-align: center;
-}
-
-p {
-    text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 hr {
     width: 80%;
     height: 2px;
-    border: 0;
     background-color: #030303;
-    margin-top: 25px;
-    margin-bottom: 50px;
 }
 
 .body {
     min-height: 1555px;
     background-color: #2e2cf4;
-    margin: 0;
-    padding: 0;
     color: #000000;
     font-family: "Comfortaa", sans-serif;
-    text-decoration: none;
 }
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
 
 
 /*.........................................................Nav bar....................................................*/
 .navbar {
     opacity: 0.9;
+    min-height: 80px;
 }
 
-.navbar .dropdown-menu {
+.dropdown-menu {
     border:none;
     background-color:#0060c8!important;
     border-radius: 0px;
@@ -102,49 +73,27 @@ hr {
 }
 
 li.active {
-    color: #5b5b5b;
+    color: #757575;
 }
 
 li a:hover:not(.active) {
-    color: #5b5b5b;
+    color: #575757;
 }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     /* remove the padding from the navbar so the dropdown hover state is not broken */
     .navbar {
-        padding-top:0px;
-        padding-bottom:0px;
-        min-height: 56px;
-        background-color: yellow;
+        background-color: yellow;        ------------------
     }
 
     /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-    .navbar .nav-item {
+     .nav-item {
         padding:.5rem .5rem;
         margin:.25rem;
     }
-    .navbar .nav-tab {
-        padding:.5rem .5rem;
-        margin:0.25rem;
-    }
-
-    /* makes the dropdown full width  */
-    .navbar .dropdown {
-        position:static;
-    }
-
-    .navbar .dropdown-menu {
-        width:100%;
-        left:0;
-        right:0;
-        top: 62px;
-
-    }
 }
-
-
 
 
 /*......................................................About.........................................................*/
@@ -158,8 +107,6 @@ li a:hover:not(.active) {
     padding-top: 50px;
 }
 
-
-
 .reason_box_title {
     font-size: 38px;
     line-height: 1em;
@@ -167,21 +114,18 @@ li a:hover:not(.active) {
 }
 
 .reason_box_subtitle {
-    font-size: 18px;
-}
-.reason_box_text {
-    margin-top: 16px;
+    font-size: 20px;
 }
 
-/*......................................................Target.........................................................*/
+/*......................................................Services.......................................................*/
 
-.target{
+.services{
     background-color: #717171;
 }
 
 
 
-/*.....................................................Footer.........................................................*/
+/*..............................................,,.......Footer.......................................................*/
 
 #copyrights {
     clear: both;
